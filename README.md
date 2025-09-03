@@ -4,7 +4,7 @@ A landing page for desktop modern  teleprompter application built with Electron 
 
 
 <p align="center">
-  <img src="public/gostart.png" alt="home">
+  <img src="public/homeweb.png" alt="home">
 </p>
 
 <br>
