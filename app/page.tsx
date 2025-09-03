@@ -532,28 +532,28 @@ export default function TeleprompterProLanding() {
             </div>
 
             {[
-              { 
-                title: "Product", 
+              {
+                title: "Product",
                 links: [
-                  { text: "Features", href: "#features" },
-                  { text: "Download", href: "#download" },
-                  { text: "Quick Start", href: "#features" }
-                ] 
+                  { text: "Features", href: "#features", external: false },
+                  { text: "Download", href: "#download", external: false },
+                  { text: "Quick Start", href: "#features", external: false }
+                ]
               },
-              { 
-                title: "Support", 
+              {
+                title: "Support",
                 links: [
                   { text: "Documentation", href: "https://github.com/diegoperea20/modern-teleprompter-pro", external: true },
                   { text: "GitHub Issues", href: "https://github.com/diegoperea20/modern-teleprompter-pro", external: true }
                   
-                ] 
+                ]
               },
-              { 
-                title: "Developer", 
+              {
+                title: "Developer",
                 links: [
                   { text: "GitHub Repository", href: "https://github.com/diegoperea20", external: true },
                   { text: "Diego Ivan Perea Montealegre", href: "https://github.com/diegoperea20", external: true }
-                ] 
+                ]
               },
             ].map((section, index) => (
               <div key={index}>
@@ -565,12 +565,12 @@ export default function TeleprompterProLanding() {
                     <li key={linkIndex}>
                       <a
                         href={link.href}
-                        target={link.external ? '_blank' : '_self'}
-                        rel={link.external ? 'noopener noreferrer' : ''}
+                        target={link.external === true ? '_blank' : '_self'}
+                        rel={link.external === true ? 'noopener noreferrer' : ''}
                         className="hover:text-[#4297d7] transition-all duration-300 hover:translate-x-1 inline-flex items-center gap-1 relative group text-gray-400"
                       >
                         {link.text}
-                        {link.external && <ExternalLink className="w-3 h-3" />}
+                        {link.external === true && <ExternalLink className="w-3 h-3" />}
                         <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-[#4297d7] transition-all duration-300 group-hover:w-full"></span>
                       </a>
                     </li>
