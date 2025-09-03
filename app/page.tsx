@@ -551,7 +551,7 @@ export default function TeleprompterProLanding() {
               {
                 title: "Developer",
                 links: [
-                  { text: "GitHub Repository", href: "https://github.com/diegoperea20", external: true },
+                  { text: "GitHub Repository", href: "https://modern-teleprompter-pro.vercel.app", external: true },
                   { text: "Diego Ivan Perea Montealegre", href: "https://github.com/diegoperea20", external: true }
                 ]
               },
